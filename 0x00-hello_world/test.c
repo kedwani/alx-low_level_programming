@@ -1,8 +1,15 @@
 #include <stdio.h>
+/**
+ *main -entery point
+ *
+ *a7a
+ *
+ *desription: a7teen
+ *
+ *Return:  0 is succecful
+*/
 int main(void)
 {
-printf("hello by printf\n");
-puts("hello by puts");
-printf("just to verify auto new line of puts\n");
+	printf("the size of intger is : %d\n", sizeof(int));
 return (0);
 }
