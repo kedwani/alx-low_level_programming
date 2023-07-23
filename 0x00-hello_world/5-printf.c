@@ -1,6 +1,5 @@
 #include <stdio.h>
-/*
- *
+/**
  *main - entry point
  *
  *description : to print string
