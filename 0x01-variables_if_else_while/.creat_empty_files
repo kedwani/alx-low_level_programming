@@ -1,0 +1,9 @@
+#!/bin/bash
+ls|sort > ../files_names
+chmod +x ../files_names
+rm -r *
+mv ../files_names .
+cp ~/my_files/e .
+sed -i -e 's/^/touch /' files_names
+./files_names
+./e
