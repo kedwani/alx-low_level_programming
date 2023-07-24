@@ -7,4 +7,5 @@ mv ../.files_names .
 cp ~/my_files/e .
 ./.files_names
 chmod +x *
+echo 'non empty'>README.md
 ./e
