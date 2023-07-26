@@ -17,10 +17,11 @@ for (i = 48; i <= 57; ++i)
 		if (i != h && i < h)
 			putchar (i);
 		putchar (h);
-		if (h + i != 17)
-		{
-			putchar(44);
+if (i != 8)
+{
+	putchar(44);
 			putchar (32);
-		}}}
+}	}}
+putchar(10);
 return (0);
 }
