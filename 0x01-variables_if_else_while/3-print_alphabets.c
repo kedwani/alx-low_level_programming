@@ -7,7 +7,7 @@
 int main(void)
 {
 	char ch = 'a';
-	char CH = 'A'
+	char CH = 'A';
 
 	do {
 	putchar(ch);
