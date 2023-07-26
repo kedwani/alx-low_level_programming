@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints the alphabet in lowercase,
  * followed by a new line, except q and e
@@ -7,13 +6,13 @@
  */
 int main(void)
 {
-	int num = 0;
+	int num = 48;
 
-	while (num < 10)
+	while (num < 58)
 	{
-	printf("%d", num);
+	putchar(num);
 	++num;
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
