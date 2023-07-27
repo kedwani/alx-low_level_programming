@@ -18,4 +18,4 @@ int main(void)
 	} while (ch <= 'z');
 	putchar (10);
 	return (0);
-}
+	}}
