@@ -5,9 +5,9 @@
  * Return:0
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	int i
+	int i;
 	for (i = 1; i >= 10; ++i)
 		{
 	char c = 'a';
@@ -16,9 +16,7 @@ void print_alphabet_x10(void);
 	{
 		_putchar(c);
 		c++;
-
 	}
-		}
 	_putchar('\n');
-
+		}
 }
