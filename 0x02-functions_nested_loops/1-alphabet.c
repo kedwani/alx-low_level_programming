@@ -5,8 +5,11 @@
  *
  * Return: Always 0.
  */
-void main (void)
+int main (void)
 {
+	print_alphabet() ;
+	return (0);
+		}
 void print_alphabet(void)
 	{
 	char ch = 'a';
@@ -16,5 +19,4 @@ void print_alphabet(void)
 	++ch;
 	} while (ch <= 'z');
 	_putchar (10);
-}
 }
