@@ -7,6 +7,7 @@
  */
 void print_to_98(int n)
 {
+	int s = n;
 	while (n >= 98)
 	{
 		printf("%d", n);
@@ -17,14 +18,15 @@ void print_to_98(int n)
 			}
 		--n;
 	}
-	while (n <= 98)
+
+	while (s < 98)
 	{
-		printf("%d", n);
-		if (n != 98)
+		printf("%d", s);
+		if (s != 98)
 		{
 			_putchar(',');
 			_putchar(' ');
-			++n;
+			++s;
 		}
 	}
 }
