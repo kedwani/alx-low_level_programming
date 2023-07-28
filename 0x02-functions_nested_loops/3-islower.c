@@ -6,7 +6,6 @@
  */
 int _islower(int c)
 {
-	int c;
 	int i = 0;
 
 	while ((c = 'c'))
