@@ -6,13 +6,13 @@
  */
 int _islower(int c)
 {
-	char c;
+	int c;
 	int i = 0;
 
-	while (c = 'c')
+	while ((c = 'c'))
 	{
 	++i;
-	++c
+	++c;
 	}
 	return (i);
 }
