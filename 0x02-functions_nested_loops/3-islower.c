@@ -6,12 +6,8 @@
  */
 int _islower(int c)
 {
-	int i = 0;
-
-	while ((c = 'c'))
-	{
-	++i;
-	++c;
-	}
-	return (i);
+	if (c >= 'a' && c<= 'z')
+		return (1);
+	else
+		return (i);
 }
