@@ -14,14 +14,14 @@ void more_numbers(void)
 	{
 		for (a = '0'; a <= b; a++)
 		{
-			_puchar (a);
+			_putchar (a);
 			if (a == '9')
 			{
 				b = '4';
 				if (a != '4')
-					_Putchar('1');
+					_putchar('1');
 			}
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
