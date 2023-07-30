@@ -19,7 +19,8 @@ void print_square(int size)
 
 			}
 			_putchar('\n');
-
+			if (b = size)
+				_putchar('\n');
 
 		}
 	}
