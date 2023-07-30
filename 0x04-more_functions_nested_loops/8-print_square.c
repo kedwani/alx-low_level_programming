@@ -4,26 +4,20 @@
  */
 void print_square(int size)
 {
-	int a, b;
-
-	if (size > 0)
+	if (size <= 0)
 	{
+		_putchar('\n');
+	} else
+	{
+		int i, j;
 
-		for (a = 1; a <= size; a++)
+		for (i = 0; i < size; i++)
 		{
-
-			for (b = 1; b <= size; b++)
+			for (j = 0; j < size; j++)
 			{
 				_putchar('#');
-
-
 			}
 			_putchar('\n');
-			if (b == size)
-				_putchar('\n');
-
 		}
 	}
-	else
-		_putchar('\n');
 }
