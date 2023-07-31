@@ -7,7 +7,7 @@
 void rev_string(char *s)
 {
 	int i;
-	int ary[ ];
+	int ary[999];
 	int a=0;
 
 		for (i = 0; *s != '\0'; ++s)
@@ -19,6 +19,6 @@ void rev_string(char *s)
 			ary[a] = *s;
 			a++;
 		}
-		ary[a+1] = /0;
+		ary[a+1] = \0;
 		_putchar('\n');
 }
