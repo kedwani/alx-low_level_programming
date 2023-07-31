@@ -12,5 +12,5 @@ int _strlen(char *s)
 		for (i = 0; i != nono; ++i)
 			_putchar(i);
 		if (*S == "/0")
-i=nono
+			i=nono;
 	}
