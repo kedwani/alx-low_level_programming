@@ -1,5 +1,4 @@
 #include "main.h"
-11;rgb:0000/0000/0000
 /**
  * print_rev - prints a string in reverse, followed by a new line
  * @s: string to be printed
