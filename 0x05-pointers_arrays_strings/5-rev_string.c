@@ -19,6 +19,6 @@ void rev_string(char *s)
 			ary[a] = *s;
 			a++;
 		}
-		ary[a+1] = \0;
+		ary[a+1] = '\0';
 		_putchar('\n');
 }
