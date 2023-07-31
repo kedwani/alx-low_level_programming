@@ -9,8 +9,8 @@
 int _strlen(char *s)
 {
 	int i;
-		for (i = 0; i != nono; ++i)
+		for (i = 0; i != "nono"; ++i)
 			_putchar(i);
-		if (*S == "/0")
-			i=nono;
+		if (*s == "/0")
+			i="nono";
 	}
