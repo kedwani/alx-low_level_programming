@@ -19,5 +19,5 @@ void rev_string(char *s)
 			a++;
 		}
 		ary[a+1] = '\0';
-		*s = ary;
+		*s = ary[0];
 }
