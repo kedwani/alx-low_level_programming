@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	long double a = 1;
-	long double b = 2;
-	long double sum = 0;
+	double a = 1;
+	double b = 2;
+	double sum = 0;
 	int c;
 
-	printf("%.0Lf, ", a);
-	printf("%.0Lf, ", b);
+	printf("%.0lf, ", a);
+	printf("%.0lf, ", b);
 	for (c = 3; c < 98; ++c)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
 
-		printf("%.0Lf, ", sum);
+		printf("%.0lf, ", sum);
 	}
-	printf("%.0Lf\n", (a + b));
+	printf("%.0lf\n", (a + b));
 	return (0);
 }
