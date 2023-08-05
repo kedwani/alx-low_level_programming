@@ -12,16 +12,16 @@ int main(void)
 	long double sum = 0;
 	int c;
 
-	printf("%Lf, ", a);
-	printf("%Lf, ", b);
-	for (c = 3; c < 95; ++c)
+	printf("%.0Lf, ", a);
+	printf("%.0Lf, ", b);
+	for (c = 3; c < 98; ++c)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
 
-		printf("%Lf, ", sum);
+		printf("%.0Lf, ", sum);
 	}
-	printf("%Lf\n", (a + b));
+	printf("%.0Lf\n", (a + b));
 	return (0);
 }
