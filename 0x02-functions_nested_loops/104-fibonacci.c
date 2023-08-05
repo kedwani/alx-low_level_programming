@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	unsigned long double a = 1;
-	unsigned long double b = 2;
-	unsigned long double sum = 0;
+	long double a = 1;
+	long double b = 2;
+	long double sum = 0;
 	int c;
 
 	printf("%Lf, ", a);
