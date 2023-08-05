@@ -20,8 +20,8 @@ void print_triangle(int size)
 
 			while (a != 0)
 			{
-				_putchar('#')
-					--a
+				_putchar('#');
+				--a;
 			}
 
 
