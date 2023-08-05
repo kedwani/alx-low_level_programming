@@ -13,7 +13,7 @@ int main(void)
 
 	printf("%d, ", a);
 	printf("%d, ", b);
-	while (sum <= 50)
+	for (c = 0; c < 49; ++c)
 	{
 		sum = a + b;
 		a = b;
@@ -21,5 +21,6 @@ int main(void)
 
 		printf("%d, ", sum);
 	}
+	printf("%d", (a + b));
 	return (0);
 }
