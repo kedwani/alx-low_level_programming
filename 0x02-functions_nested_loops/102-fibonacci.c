@@ -9,7 +9,7 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	int sum;
+	int sum = 0;
 
 	printf("%d, ", a);
 	printf("%d, ", b);
