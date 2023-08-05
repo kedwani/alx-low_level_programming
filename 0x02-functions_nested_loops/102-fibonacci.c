@@ -9,16 +9,17 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	int sum ;
+	int sum;
 
-	printf("%d, " ,a);
-	printf("%d, " ,b);
+	printf("%d, ", a);
+	printf("%d, ", b);
 	while (sum <= 50)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
 
-		printf("%d, " ,sum);
+		printf("%d, ", sum);
 		return (0);
 	}
+}
