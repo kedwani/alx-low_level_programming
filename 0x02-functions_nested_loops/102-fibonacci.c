@@ -12,8 +12,8 @@ int main(void)
 	unsigned long int sum = 0;
 	int c;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%lu, ", a);
+	printf("%lu, ", b);
 	for (c = 3; c < 50; ++c)
 	{
 		sum = a + b;
