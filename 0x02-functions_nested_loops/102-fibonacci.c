@@ -20,8 +20,8 @@ int main(void)
 		a = b;
 		b = sum;
 
-		printf("%d, ", sum);
+		printf("%u, ", sum);
 	}
-	printf("%d", (a + b));
+	printf("%u", (a + b));
 	return (0);
 }
