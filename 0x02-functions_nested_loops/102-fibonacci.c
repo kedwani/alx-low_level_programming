@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%d, ", a);
 	printf("%d, ", b);
-	for (c = 0; c < 47; ++c)
+	for (c = 3; c < 50; ++c)
 	{
 		sum = a + b;
 		a = b;
