@@ -9,7 +9,7 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	unsigned int sum = 0;
+	unsigned long int sum = 0;
 	int c;
 
 	printf("%d, ", a);
@@ -20,8 +20,8 @@ int main(void)
 		a = b;
 		b = sum;
 
-		printf("%u, ", sum);
+		printf("%lu, ", sum);
 	}
-	printf("%u", (a + b));
+	printf("%lu", (a + b));
 	return (0);
 }
