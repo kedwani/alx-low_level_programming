@@ -17,4 +17,5 @@ int main(void)
 				break;
 	}
 	printf("%u\n",sum);
+	return (0);
 }
