@@ -15,12 +15,12 @@ char *str_concat(char *s1, char *s2)
 	int i1, i2;
 
 /*lengs of chars*/
-	while (s1[n1] != '\0')
+	while (s1[n1])
 	{
 		++n1;
 	}
 
-	while (s2[n2] != '\0')
+	while (s2[n2])
 	{
 		++n2;
 	}
