@@ -25,25 +25,20 @@ char *str_concat(char *s1, char *s2)
 		++n2;
 	}
 	++n2;
-/*CHECH FOR NULL*/
-	if (s1 == NULL)
-		n1 = 0;
-	else if (s2 == NULL)
-		n2 = 0;
-	else if (s1 == NULL && s2 == NULL)
-		n1 = n2 = 0;
 /*allocat memmory*/
 	s = malloc(sizeof(char) * (n1+n2));
 		if (s == NULL)
 			return (NULL);
 /*intialize memmory*/
-	for (i1 = 0; i1 < n1; i1++)
-		s[i1]=s1[i1];
-	for (i2 = n1 ;i2 <= (n1+n2); ++i2)
-	{
-		s[i2] = s2[j];
-		j++;
-	}
-	s[i2] = '\0';
-	return (s);
+		if (s1)
+			for (i1 = 0; i1 < n1; i1++)
+				s[i1]=s1[i1];
+		if (s2)
+			for (i2 = n1 ;i2 <= (n1+n2); ++i2)
+			{
+				s[i2] = s2[j];
+				j++;
+			}
+		s[i2] = '\0';
+		return (s);
 }
