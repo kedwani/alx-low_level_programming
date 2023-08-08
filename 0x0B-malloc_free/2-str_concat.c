@@ -32,10 +32,11 @@ char *str_concat(char *s1, char *s2)
 /*intialize memmory*/
 	for (i1 = 0; i1 < n1; i1++)
 		s[i1]=s1[i1];
-	for (i2 = n1 + 1 ;i2 <= (n1+n2); ++i2)
+	for (i2 = n1 ;i2 <= (n1+n2); ++i2)
 	{
 		s[i2] = s2[j];
 		j++;
 	}
+	s[i2] = s2[j];
 	return (s);
 }
