@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+11;rgb:0000/0000/0000#include "main.h"
 
 /**
  * *_strdup - copies the string given as parameter
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 /*intialize memmory*/
-	for (n = 0; str <= i; ++n)
+	for (n = 0; n <= i; ++n)
 		s[n] = str[n];
 	return (s);
 }
