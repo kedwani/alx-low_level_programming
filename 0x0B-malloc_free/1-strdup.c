@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	int i, n;
 	char *s;
 /*check for null str*/
-	if (str == 0)
+	if (str == NULL)
 		return (0);
 /*calculate first string length*/
 	for (i = 0; str[i] != '\0'; i++)
