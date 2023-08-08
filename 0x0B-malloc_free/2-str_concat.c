@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 		if (s == NULL)
 			return (NULL);
 /*intialize memmory*/
-	for (i1 = 0; i1 <= n1; i1++)
+	for (i1 = 0; i1 < n1; i1++)
 		s[i1]=s1[i1];
 	for (i2 = n1 + 1 ;i2 <= (n1+n2); ++i2)
 	{
