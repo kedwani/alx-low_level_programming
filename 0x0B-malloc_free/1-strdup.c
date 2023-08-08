@@ -9,13 +9,13 @@
  */
 char *_strdup(char *str)
 {
-	int i;
+	int i, n;
 	char *s;
 /*check for null str*/
 	if (str == 0)
 		return (0);
 /*calculate first string length*/
-	for (i = 0; str[i] != "\0"; i++)
+	for (i = 0; str[i] != '\0'; i++)
 /*allocate memmory for new string*/
 	s = malloc(i+1);
 	if (s == 0)
