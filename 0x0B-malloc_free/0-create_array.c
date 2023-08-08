@@ -1,5 +1,5 @@
 #include <stdlib.h>
-11;rgb:0000/0000/0000#include "main.h"
+#include "main.h"
 
 /**
  *create_array - creates an array of chars,
