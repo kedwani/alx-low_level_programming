@@ -11,7 +11,8 @@ char *_strcat(char *dest, char *src)
 {
 int i = 0;
 int j = 0;
-int n, f;
+int n;
+int f = 0;
 
 while (dest[i])
 	i++;
