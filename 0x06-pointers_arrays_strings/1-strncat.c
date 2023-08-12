@@ -16,7 +16,7 @@ int i;
 while (dest[j])
 	++j;
 
-for (i = 0; i <= n; ++i)
+for (i = 0; i < n; ++i)
 {
 	dest[j + i] = src[i];
 	if (src[i] == '\0')
