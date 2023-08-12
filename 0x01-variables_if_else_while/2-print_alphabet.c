@@ -7,12 +7,23 @@
  */
 int main(void)
 {
-	char ch = 'a';
-	while (ch <= 'z')
+char ch = 'a';
+/*
+while (ch <= 'z')
 	{
 		putchar(ch);
 		++ch;
 	}
+*/
+for (; ch <= 'z'; ++ch)
+{
+	putchar(ch);
+}
+
+
+
 	putchar('\n');
 	return (0);
+
+
 }
