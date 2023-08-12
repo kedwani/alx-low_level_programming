@@ -18,7 +18,7 @@ while (dest[i])
 	i++;
 while (src[j])
 	j++;
-for (n = i; dest[n] != '\0'; n++)
+for (n = i; src[f] != '\0'; n++)
 {
 	dest[n] = src[f];
 	++f;
