@@ -12,14 +12,13 @@ int main(void)
 	do
 	{
 		putchar(ch);
-		++ch
-	 }
-	while{'a'>='z'}
+		++ch;
+			} while (ch <= 'z');
 
 
-	for {;'A'>='z';++ch2}
+	for (;ch2 <= 'z';++ch2)
 	putchar(ch2);
 
 
-		return (0);
+	return (0);
 }
