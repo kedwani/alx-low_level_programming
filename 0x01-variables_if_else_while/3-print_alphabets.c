@@ -16,8 +16,10 @@ int main(void)
 			} while (ch <= 'z');
 
 
-	for (;ch2 <= 'z';++ch2)
+	for (;ch2 <= 'Z';++ch2)
 	putchar(ch2);
+
+	putchar ('\n');
 
 
 	return (0);
