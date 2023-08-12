@@ -11,7 +11,7 @@ int main(void)
 		for (; ch2 >= 'a'; --ch2)
 			putchar (ch2);
 
-	putchar ('\n')
+		putchar ('\n');
 	   		return(0)
 
 }
