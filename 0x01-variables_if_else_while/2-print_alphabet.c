@@ -14,12 +14,18 @@ while (ch <= 'z')
 		putchar(ch);
 		++ch;
 	}
-*/
-for (; ch <= 'z'; ++ch)
+
+for (ch ='a'; ch <= 'z'; ++ch)
 {
 	putchar(ch);
 }
+*/
 
+	do
+	{
+		putchar (ch);
+		++ch;
+	}while (ch <= 'z');
 
 
 	putchar('\n');
