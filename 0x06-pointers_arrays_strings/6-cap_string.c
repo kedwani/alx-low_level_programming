@@ -10,6 +10,7 @@ char *cap_string(char *s)
 {
 	int i;
 	int j;
+	int k;
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
 
@@ -24,8 +25,8 @@ char *cap_string(char *s)
 		{
 
 			for (k = 0; k < 13; ++k)
-				if s[j] = spe[k]
-					    s[i] -= 32;
+				if (s[j] == spe[k])
+					s[i] -= 32;
 
 			/*if (s[j] == ' ' || s[j] == '\t' || s[j] == '\n'
 			    || s[j] == ',' || s[j] == ';' || s[j] == '.'
