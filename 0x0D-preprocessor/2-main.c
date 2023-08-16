@@ -8,6 +8,8 @@
 
 int main(void)
 {
-	printf("%s\n ", __FILE__);
+	char s[];
+	s= __FILE__;
+	printf("%s\n ", s);
 	return (0);
 }
