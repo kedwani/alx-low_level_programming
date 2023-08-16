@@ -18,15 +18,17 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		f = 0;
 		for (j = 0; accept[j] != '\0'; ++j)
+		{
 			if (accept[j] == s[i])
 			{
 				k++;
 				f = 1;
 			}
+		}
 		if (f == 0)
 			return (k);
 
 
 	}
-
+	return (0);
 }
