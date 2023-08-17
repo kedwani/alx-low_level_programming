@@ -15,8 +15,8 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 /*calculate first string length*/
-	for (i = 0; str[i] != '\0'; i++)
-		;
+	while(str[i])
+		i++;
 /*allocate memmory for new string*/
 	s = malloc(sizeof(char) * (i + 1));
 	if (s == NULL)
