@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 /*calculate first string length*/
-	while(str[i])
+	while (str[i])
 		i++;
 /*allocate memmory for new string*/
 	s = malloc(sizeof(char) * (i + 1));
