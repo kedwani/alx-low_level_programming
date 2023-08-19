@@ -1,22 +1,12 @@
 #include "main.h"
 
-
-void print_alphabet(void);
+int print_sign(int n)
 {
-	int i;
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		_putchar(i);
+	if (n>0)
+		return(1);	{
 
-	}
-	_putchar('\n');
 
-}
 
-main(void)
-{
-	print_alphabet();
-	
 
 
 }
