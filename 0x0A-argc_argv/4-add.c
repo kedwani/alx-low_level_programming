@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int num, sum = 0;
+	int a, sum = 0;
 
 	if (argc == 1)
 	{
@@ -24,14 +24,14 @@ int main(int argc, char *argv[])
 		a = atoi(argv[i]);
 		if (a > 0)
 		{
-			sum+=a;
+			sum += a;
 		}
-		if(a == 0 && argv[i] !='0')
+		if (a == 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
-	printf("%d\n",sum);
+	printf("%d\n", sum);
 	return (0);
 }
