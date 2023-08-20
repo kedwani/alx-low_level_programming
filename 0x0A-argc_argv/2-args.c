@@ -1,4 +1,4 @@
-#inculde <stdio.h>
+#inculde < stdio.h >
 #include "main.h"
 
 /**
@@ -12,7 +12,7 @@
  *
  **/
 
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
