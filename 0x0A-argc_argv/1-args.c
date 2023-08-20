@@ -3,10 +3,13 @@
 /**
  * main -print num of arguments
  *
- *Return : alwayes zero
+ * @argv : array of arguments
  *
- **/
-int main (int argc, char *argv[] __attribute__((unused)))
+ * @argc : number of arguments
+ * Return: always (0)
+ *
+ */
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 
 	printf("%d\n", argc - 1);
