@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
+/**
  * main - multiply two arg
  * @argv : arguments to be multiplyed
  * @argc : numbers of argues
