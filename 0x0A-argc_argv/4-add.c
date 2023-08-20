@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		{
 			sum += a;
 		}
-		if (a == 0)
+		if (a == 0 && **(argv+i) != '0')
 		{
 			printf("Error\n");
 			return (1);
