@@ -10,6 +10,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
+<<<<<<< HEAD
 	int i, j;
 
 	i = 0;
@@ -27,5 +28,23 @@ char *_strncat(char *dest, char *src, int n)
 
 	dest[i] = '\0';
 
+=======
+	int i;
+	int j;
+
+	for (i = 0;dest[i] != '\0';i++)
+		;
+	for (j = 0;src[j] != '0';j++)
+	{if(n>=j)
+	 {
+		dest[i] = src[j];
+		i++;
+	 }
+		else
+			dest[i]='\0';
+	}
+	if(
+	dest[i] = '\0';
+>>>>>>> 786123c197076c3eb80b0ac67c6c41e17d71c883
 	return (dest);
 }

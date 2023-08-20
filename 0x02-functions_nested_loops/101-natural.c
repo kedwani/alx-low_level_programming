@@ -9,9 +9,9 @@ int main(void)
 	int a;
 	unsigned int sum = 0;
 
-	for (a = 1; a <= 1024; ++a)
-  	{
-		 if ((a % 3 == 0) || (a % 5 == 0))
+	for (a = 3; a < 1024; ++a)
+	{
+		if ((a % 3 == 0) || (a % 5 == 0))
 			sum += a;
 	}
 	printf("%u\n", sum);

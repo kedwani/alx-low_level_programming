@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 0x06. C - More pointers, arrays and strings Project
 
 File 0-strcat.c is a function that concatenates two strings.
@@ -21,3 +22,6 @@ File 100-rot13.c is a function that encodes a string using rot13.
 File _putchar.c is a function that replaces the standard library function putchar().
 
 File main.h is the header file containing all the function prototypes.
+=======
+non empty
+>>>>>>> 786123c197076c3eb80b0ac67c6c41e17d71c883
