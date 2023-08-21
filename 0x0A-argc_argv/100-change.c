@@ -12,18 +12,20 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 1)
+	/*sum is the change .. rest is the rest of money after every operation */
+	int a = atoi(argv[1]);
+	int sum = 0;
+	int rest = a;
+/*check for argc not equal 2*/
+	if (argc != 2)
 	{
 		printf("Error");
 		return (1);
 	}
-
-	int a = atoi(argv[1]);
-	int sum = 0;
-	int rest =a;
-
+/*check for negative*/
 	if (a < 0)
 		printf("0\n");
+/*the prog*/
 	if (a / 25 > 0)
 	{
 		sum += (a / 25);
@@ -45,9 +47,7 @@ int main(int argc, char *argv[])
 		rest -= (sum * 2);
 	}
 	if (rest / 1 > 0)
-	{
 		sum += (rest / 1);
-	}
 	printf("%d\n", sum);
 	return (0);
 }
