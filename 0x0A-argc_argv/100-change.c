@@ -17,12 +17,9 @@ int main(int argc, char *argv[])
 /*check for argc not equal 2*/
 	if (argc != 2)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
-/*check for negative*/
-	if (a < 0)
-		printf("0\n");
 /*the prog*/
 	if (a / 25 > 0)
 	{
