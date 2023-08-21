@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	if (a < 0)
 	{
 		printf("0\n");
-		return (0);
+		return (1);
 	}
 	if (a / 25 > 0)
 	{
