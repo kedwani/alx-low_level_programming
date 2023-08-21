@@ -14,13 +14,17 @@ int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]);
 	int sum = 0, rest = a, i;
-/*check for argc not equal 2*/
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-/*the prog*/
+	if (a < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	if (a / 25 > 0)
 	{
 		i = (rest / 25);
