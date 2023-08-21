@@ -12,19 +12,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int sum = 0, rest = a, i;
+	int a;
+	int sum = 0, rest, i;
 
-	if (argc != 2)
+	if (argc != 2 || argc == 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (a < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
+	a = atoi(argv[1]);
+	rest = a;
 	if (a / 25 > 0)
 	{
 		i = (rest / 25);
