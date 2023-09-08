@@ -15,7 +15,7 @@ int main(void)
 	*/
 	char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int i;
-	for (i=0;arr[i] != \0;++i)
+	for (i=0;arr[i] != '\0';++i)
 		putchar(arr[i]);
 	putchar(10);
 }
