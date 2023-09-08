@@ -18,4 +18,5 @@ int main(void)
 	for (i=0;arr[i] != '\0';++i)
 		putchar(arr[i]);
 	putchar(10);
+	return(1);
 }
