@@ -9,6 +9,13 @@
  */
 int main(void)
 {
+	/*
 	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
+	*/
+	char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int i;
+	for (i=0;arr[i] != \0;++i)
+		putchar(arr[i]);
+	putchar(10);
 }
