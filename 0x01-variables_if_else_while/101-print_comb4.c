@@ -17,22 +17,19 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = 48; i <= 57; ++i)
+	for (i = 0; i <= 7; ++i)
 	{
-		for (j = i; j <= 57; ++j)
+		for (j = i + 1; j <= 8; ++j)
 		{
-			for (k = j; k <= 57; ++k)
+			for (k = j + 1; k <= 9; ++k)
 			{
-				if (i != j && j != k && i != k)
+				putchar (i);
+				putchar (j);
+				putchar (k);
+				if (i != 7 || j != 8 || k != 9)
 				{
-					putchar (i);
-					putchar (j);
-					putchar (k);
-					if (i != 55 || j != 56 || k != 57)
-					{
-						putchar(44);
-						putchar (32);
-					}
+					putchar(44);
+					putchar (32);
 				}
 			}
 		}
