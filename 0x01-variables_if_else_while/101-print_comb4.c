@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+/**
+ * main - a prog to print 3 comoination of digits
+ *
+ * Return: always zero (0)
+ *
+ *
+ *
+ *
+ */
+
 
 int main(void)
 {
