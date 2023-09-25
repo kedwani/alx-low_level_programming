@@ -10,7 +10,6 @@ int _strlen_recursion(char *s)
 		_strlen_recursion(s + 1);
 		medhat ++;
 	}
-	else
-		;
+	else {}
 	return (medhat);
 }
