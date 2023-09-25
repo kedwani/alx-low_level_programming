@@ -1,4 +1,4 @@
-
+#include "main.h"
 
 
 
@@ -11,5 +11,6 @@ int _strlen_recursion(char *s)
 		medhat ++;
 	}
 	else
-		return (medhat);
+		;
+	return (medhat);
 }
