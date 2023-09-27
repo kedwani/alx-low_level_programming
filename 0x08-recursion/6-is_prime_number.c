@@ -1,6 +1,12 @@
 #include "main.h"
 int prime (int n ,int i);
-
+/**
+ *is_prime_number - is the main function
+ *
+ *Return : (0) if num is
+ *
+ *@n : is the num
+ */
 int is_prime_number(int n)
 {
 	if (n < 2)
@@ -8,6 +14,14 @@ int is_prime_number(int n)
 
 	return (prime(n, 2));
 }
+
+/**
+ *prime - is the main function
+ *
+ *Return : (0) if num is
+ *
+ *@n : is the num
+ */
 int prime (int n ,int i)
 {
 	if (n != i && n % i == 0)
