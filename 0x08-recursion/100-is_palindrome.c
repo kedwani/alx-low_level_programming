@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0cint _strlen_recursion(char *s);
+int _strlen_recursion(char *s);
 int my_func (char *s, int i, int x);
 int is_palindrome(char *s);
 
