@@ -1,9 +1,0 @@
-touch 0-create_array.c
-touch 100-argstostr.c
-touch 101-strtow.c
-touch 1-strdup.c
-touch 2-str_concat.c
-touch 3-alloc_grid.c
-touch 4-free_grid.c
-touch main.h
-touch README.md

@@ -1,9 +1,0 @@
-touch 0-whatsmyname.c
-touch 100-change.c
-touch 1-args.c
-touch 2-args.c
-touch 3-mul.c
-touch 4-add.c
-touch main.h
-touch _putchar.c
-touch README.md

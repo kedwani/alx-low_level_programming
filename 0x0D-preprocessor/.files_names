@@ -1,6 +1,0 @@
-touch 0-object_like_macro.h
-touch 1-pi.h
-touch 2-main.c
-touch 3-function_like_macro.h
-touch 4-sum.h
-touch README.md

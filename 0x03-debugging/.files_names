@@ -1,8 +1,0 @@
-touch 0-main.c
-touch 1-main.c
-touch 2-largest_number.c
-touch 3-convert_day.c
-touch 3-main_a.c
-touch 3-print_remaining_days.c
-touch main.h
-touch README.md
