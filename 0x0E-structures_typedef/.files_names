@@ -1,0 +1,6 @@
+touch 1-init_dog.c
+touch 2-print_dog.c
+touch 4-new_dog.c
+touch 5-free_dog.c
+touch dog.h
+touch README.md

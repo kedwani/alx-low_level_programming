@@ -1,0 +1,16 @@
+touch 0-isupper.c
+touch 100-prime_factor.c
+touch 101-print_number.c
+touch 10-print_triangle.c
+touch 1-isdigit.c
+touch 2-mul.c
+touch 3-print_numbers.c
+touch 4-print_most_numbers.c
+touch 5-more_numbers.c
+touch 6-print_line.c
+touch 7-print_diagonal.c
+touch 8-print_square.c
+touch 9-fizz_buzz.c
+touch main.h
+touch main.h~
+touch README.md
