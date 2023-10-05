@@ -22,31 +22,31 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	rest = a;
-	if (a / 25 > 0)
+	if (a >= 25)
 	{
 		i = (rest / 25);
 		sum += i;
 		rest = a - (i * 25);
 	}
-	if (rest / 10 > 0)
+	if (rest >= 10)
 	{
 		i = (rest / 10);
 		sum += i;
 		rest -= (i * 10);
 	}
-	if (rest / 5 > 0)
+	if (rest >= 5)
 	{
 		i = (rest / 5);
 		sum += i;
 		rest -= (i * 5);
 	}
-	if (rest / 2 > 0)
+	if (rest >= 2)
 	{
 		i = (rest / 2);
 		sum += i;
 		rest -= (i * 2);
 	}
-	if (rest / 1 > 0)
+	if (rest >= 2)
 		sum += (rest / 1);
 	printf("%d\n", sum);
 	return (0);
