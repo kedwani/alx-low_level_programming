@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-void *malloc_checked(unsigned int b)
+void malloc_checked(unsigned int b)
 {
 	int *p;
 
