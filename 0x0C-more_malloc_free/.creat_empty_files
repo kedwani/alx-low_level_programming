@@ -1,0 +1,12 @@
+#!/bin/bash
+mv README.md main.h ../trash/
+ls|sort > ../.files_names
+chmod +x ../.files_names
+rm -r *
+sed -i -e 's/^/touch /' ../.files_names
+mv ../.files_names .
+cp ~/my_files/e .
+./.files_names
+mv ../trash/README.md ../trash/main.h .
+rm -r ../trash/
+./e

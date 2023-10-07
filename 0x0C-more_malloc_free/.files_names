@@ -1,0 +1,8 @@
+touch 0-malloc_checked.c
+touch 100-realloc.c
+touch 101-mul.c
+touch 1-string_nconcat.c
+touch 2-calloc.c
+touch 3-array_range.c
+touch main.h
+touch README.md
