@@ -9,8 +9,8 @@
  *@s1 : is the first string
  *@s2 : is the second string
  *@n : is the number of @s2 chars to concatenate with @s1
- *Return : pointer to the first char in new string if success or NULL if fails
- * to allocat.
+ * Return: (pointer) to the first char in new string if success or (NULL) if
+ * fails  to allocat.
  *
  */
 
