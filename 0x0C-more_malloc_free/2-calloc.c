@@ -1,10 +1,10 @@
 #include "main.h"
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *p;
+	int *p;
 	unsigned int i;
 
-	if (size == 0 || nmemb == 0)
+	if (size == '0' || nmemb == '0')
 		return (NULL);
 	p = malloc(nmemb * size);
 	if (p == NULL)
