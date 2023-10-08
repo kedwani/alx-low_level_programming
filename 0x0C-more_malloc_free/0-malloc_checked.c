@@ -3,11 +3,12 @@
 #include <stdio.h>
 
 /**
- * malloc_checked - is a f
+ * malloc_checked - is a function to check if we can malloc memmory in heap
  *
- *Return: (p) is
+ *Return: (pointer to memmory) if succeful or
+ *(98) if not
  *
- *@b : is
+ *@b : is the size needed to be allocated in memmory
  *
  */
 
