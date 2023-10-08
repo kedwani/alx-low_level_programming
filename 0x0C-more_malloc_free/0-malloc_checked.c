@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * malloc_checked - is a function to check if we can malloc memmory in heap
@@ -14,9 +12,8 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *p;
+	int *p = malloc(b);
 
-	p = malloc(b);
 	if (p == NULL)
 		exit(98);
 	else
