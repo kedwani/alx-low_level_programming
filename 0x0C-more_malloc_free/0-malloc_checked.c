@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * malloc_checked - is a f
+ *
+ *Return: (p) is
+ *
+ *@b : is
+ *
+ */
+
 void *malloc_checked(unsigned int b)
 {
 	void *p;
