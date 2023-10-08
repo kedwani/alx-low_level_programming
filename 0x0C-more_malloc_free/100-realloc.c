@@ -2,8 +2,6 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *old= (char*)ptr;
-
 	if (new_size == old_size)
 		return (ptr);
 	else if (ptr == NULL)
@@ -18,6 +16,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else if (new_size > old_size)
 	{
+		char *old= (char*)ptr;
 		char *p = malloc(new_size);
 		int i;
 
@@ -28,6 +27,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else if (new_size < old_size)
 	{
+		char *old= (char*)ptr;
 		char *p = malloc(new_size);
 		int i;
 
