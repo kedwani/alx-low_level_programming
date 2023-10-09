@@ -9,14 +9,14 @@ int main(int argc , char **argv)
 
   if (argc != 3)
   {
-    printf("ERROR");
+    printf("ERROR\n");
     return (98);
   }
   for (i=1; argv[i] != NULL; i++)
     for (j=0;argv[i][j] != '\0';j++)
       if (argv[i][j] > '9' || argv[i][j] <'0')
 	{
-	  printf("ERROR");
+	  printf("ERROR\n");
 	  return (98);
 	}
 
