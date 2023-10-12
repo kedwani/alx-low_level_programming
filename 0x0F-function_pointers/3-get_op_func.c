@@ -1,3 +1,5 @@
+#include "3-calc.h"
+
 int (*get_op_func(char *s))(int, int)
 {
   op_t ops[] = {
@@ -10,10 +12,10 @@ int (*get_op_func(char *s))(int, int)
     };
   int i = 0;
   while (i < 6)
-    {
-      if (s == ops[i][0])
-	return (ops[i][1]);
-	i++;
+  {
+	    if(s == ops[i].op)
+		    return (ops[i].f);
+	    i++;
     }
   return (NULL);
 }

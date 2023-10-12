@@ -2,8 +2,8 @@
 #include <stdlib.h>
 int main()
 {
-	char op[] = "+";
-	int g = op[0];
+	char *op = "+-/*";
+	char g = atoi (op[0]);
 	putchar(g);
 	//printf("%c",g);
 	putchar('\n');
