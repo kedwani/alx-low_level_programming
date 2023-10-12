@@ -6,7 +6,8 @@
  *
  * @name : is the name to be printed
  *
- * @f is the pointer to function to print the name
+ * @f : is the pointer to function to print the name
+ *
  */
 
 
