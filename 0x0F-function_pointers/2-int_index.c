@@ -3,6 +3,8 @@
 /**
  * int_index  - is a fumction to searh for an intger
  *
+ * Return:- (index) if matched or -1 ifnot
+ *
  * @array : is the array to search in its  elements
  *
  * @size : is the size of @array
