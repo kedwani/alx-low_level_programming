@@ -2,12 +2,11 @@
 
 
 /**
+ * print_name - is a fumction to print a name
  *
- *print_name - is a fumction to print a name
+ * @name : is the name to be printed
  *
- *@name : is the name to be printed
- *
- *@(*f)(char*) is the pointer to function to print the name
+ * @f is the pointer to function to print the name
  */
 
 
