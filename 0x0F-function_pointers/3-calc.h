@@ -1,8 +1,9 @@
-#ifndef 3-CALC
-#define 3-CALC
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 int (*get_op_func(char *s))(int, int);
 

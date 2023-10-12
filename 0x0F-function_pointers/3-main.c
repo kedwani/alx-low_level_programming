@@ -1,23 +1,29 @@
-include "3-calc.h"
+#include "3-calc.h"
 
-int main(int arg,char **argv)
+int main(int argc, char **argv)
 {
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
+
 	int num1 = atoi(argv[1]);
 	int num2 = atoi(argv[3]);
-	char op = argv[2];
 	long int res ;
-
-	if ((op == '/' || op == '%' ) && num2 == 0)
+	char *s = argv[2];
+	
+	if (s == '/' || s == '%' ) && num2 == 0)
 	{
 		printf("Error\n");
 		return (100);
 	}
-	res = int (*get_op_func(argv[2]))(num1, num2);
+	res = (*get_op_func(argv[2]))(num1, num2);
+	if (res == '\0')
+	{
+		printf("Error\n");
+		return (99);
+	}
 	printf("%ld",res);
-	retuen (0);
+	return (0);
 }
