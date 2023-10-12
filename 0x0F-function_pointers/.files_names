@@ -1,0 +1,10 @@
+touch 0-print_name.c
+touch 1-array_iterator.c
+touch 100-main_opcodes.c
+touch 2-int_index.c
+touch 3-calc.h
+touch 3-get_op_func.c
+touch 3-main.c
+touch 3-op_functions.c
+touch README.md
+touch function_pointers.h
