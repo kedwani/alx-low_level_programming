@@ -13,6 +13,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s",separator);
 		printf("%d",va_arg(ptr,int));
 	}
-	printf("\n")
+	printf("\n");
 	va_end(ptr);
 }
