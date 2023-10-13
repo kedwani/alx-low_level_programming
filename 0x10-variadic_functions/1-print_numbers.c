@@ -7,7 +7,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(ptr,n);
 	printf("%d",va_arg(ptr,int));
-	for (i = 0; i < n; ++i)
+	for (i = 1; i < n; ++i)
 	{
 		if(separator != NULL)
 			printf("%s",separator);
