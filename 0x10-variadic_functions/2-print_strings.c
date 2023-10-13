@@ -4,13 +4,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list ptr;
 	unsigned int i;
 
-	if (n != 0);
+	if (n != 0)
 	{
 		va_start(ptr,n);
-		for (i = 0, i < n;++i)
+		for (i = 0; i < n;++i)
 		{
-			if (s != NULL)
-				printf("%s", va_arg(ptr,*s));
+			if (va_arg(ptr, char*) != NULL)
+				printf("%s", va_arg(ptr,char*));
 			else
 				printf("nil");
 			if (separator != NULL && i != n-1)
