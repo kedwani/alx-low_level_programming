@@ -1,0 +1,6 @@
+touch 0-sum_them_all.c
+touch 1-print_numbers.c
+touch 2-print_strings.c
+touch 3-print_all.c
+touch README.md
+touch variadic_functions.h
