@@ -1,4 +1,9 @@
 #include "stdio.h"
+/**
+ *main- a function to print simple line.
+ *Return: alwaye (0).
+ */
+
 int main(void)
 {
 
