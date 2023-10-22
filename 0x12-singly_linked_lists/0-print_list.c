@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	list_t  *now;
-	long unsigned int i;
+	unsigned long int i;
 
 	now = h;
 	for (i = 0; now != NULL; ++i)
@@ -18,7 +18,7 @@ size_t print_list(const list_t *h)
 		if (now->str == NULL)
 			printf("[0] (nil)");
 		else
-			printf("[%u] %s\n", new->len , next->str);
+			printf("[%u] %s\n", new->len, next->str);
 		now = now->next;
 	}
 	return (i);
