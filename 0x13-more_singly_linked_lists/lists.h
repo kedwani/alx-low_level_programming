@@ -40,21 +40,21 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
  * @head: is the heade
  *@n : is the content of the new node
  *Return: the new node address.
-*/
+ */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-        /*create the new node */
-        listint_t *new_node = malloc(sizeof(listint_t));
+	/*create the new node */
+	listint_t *new_node = malloc(sizeof(listint_t));
 
-        if (!new_node)
-                return (NULL);
-        /*intialize the new node */
-        new_node->n = n;
-        new_node->next = *head;
+	if (!new_node)
+		return (NULL);
+	/*intialize the new node */
+	new_node->n = n;
+	new_node->next = *head;
 /*reassign the header*/
-        *head = new_node;
-        return (*head);
+	*head = new_node;
+	return (*head);
 }
 
 
