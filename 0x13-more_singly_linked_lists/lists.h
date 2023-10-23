@@ -33,4 +33,23 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 
+
+
+
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+        /*create the new node */
+        listint_t *new_node = malloc(sizeof(listint_t));
+
+        if (!new_node)
+                return (NULL);
+        /*intialize the new node */
+        new_node->n = n;
+        new_node->next = *head;
+/*reassign the header*/
+        *head = new_node;
+        return (*head);
+}
+
+
 #endif
