@@ -13,10 +13,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int i;
 	listint_t *h = *head, *new_node;
 
+	if (!idx);
+	return (NULL);
 	/* go for the desired position */
 	for (i = 0; i < idx - 1; ++i)
 	{
-		if (!h || !idx)
+		if (!h || (!h->next && i != idx - 1))
 			return (NULL);
 		h = h->next;
 	}
