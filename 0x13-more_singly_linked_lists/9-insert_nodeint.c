@@ -18,7 +18,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	/* go for the desired position */
 	for (i = 0; i < idx - 2; ++i)
 	{
-		if (!h || !h->next)
+		if (!h->next)
 			return (NULL);
 		h = h->next;
 	}
