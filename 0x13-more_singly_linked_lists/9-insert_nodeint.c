@@ -13,22 +13,24 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int i;
 	listint_t *new, *h = *head;
-
+/*check for NULL*/
 	if (!head)
 		return (NULL);
-
+/*creatr the new node*/
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
+/*intialize the new node*/
 	new->n = n;
 	new->next = NULL;
-
+/*check for idx == 0 <the only case that need cutom code>*/
 	if (idx == 0)
 	{
 		new->next = *head;
 		*head = new;
 		return (*head);
 	}
+/*try reaching the desired position*/
 	for (i = 0; i < idx - 1; ++i)
 	{
 		if (!h)
@@ -38,11 +40,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		h = h->next;
 	}
+/*check if we cannot reach the postion*/
 	if (!h)
 	{
 		free(new);
 		return (NULL);
 	}
+/*intialize position*/
 	new->next = h->next;
 	h->next = new;
 	return (new);
