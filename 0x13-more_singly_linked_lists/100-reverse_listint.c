@@ -4,8 +4,9 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *tmp, *prv;
-	if (!head)
+	if (!head || !*head)
 		return (NULL);
+
 	prv = (*head)->next;
 	(*head)->next = NULL;
 
