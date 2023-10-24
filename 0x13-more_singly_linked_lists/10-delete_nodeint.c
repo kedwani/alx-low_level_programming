@@ -8,30 +8,26 @@
  *Return: the address of new node.
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i;
 	listint_t *h = *head, *temp;
-/*check for NULL*/
-	if (!head)
+
+	if (!head || !*head)
 		return (-1);
-/*check for idx == 0 <the only case that need cutom code>*/
-	if (idx == 0)
+	if (index == 0)
 	{
-		free(h);
-		h = NULL;
+		*head = (*head)->next;
 		return (1);
 	}
-/*try reaching the desired position*/
-	for (i = 0; i < index - 1; ++i)
+	for (i = 0; i < index; ++i)
 	{
 		if (!h)
 			return (-1);
-		else if (i == index - 1)
+		if (i == index - 1)
 		{
 			temp = h->next;
 			h->next = temp->next;
-			free(temp);
 			return (1);
 		}
 		else
