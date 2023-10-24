@@ -19,7 +19,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 	if (idx == 0)
 	{
 		free(h);
-		h = NULL
+		h = NULL;
 		return (1);
 	}
 /*try reaching the desired position*/
