@@ -1,5 +1,6 @@
 #include "lists.h"
 /***/
+
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *tmp, *prv;
@@ -8,7 +9,7 @@ listint_t *reverse_listint(listint_t **head)
 	prv = (*head)->next;
 	(*head)->next = NULL;
 
-	while (!prv)
+	while (prv)
 	{
 		tmp = prv->next;
 		prv->next = *head;
