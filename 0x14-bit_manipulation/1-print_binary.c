@@ -11,6 +11,9 @@ void print_binary(unsigned long int n)
 	int i;
 	int flag = 0;
 
+	if (!n)
+		exit(1);
+
 	for (i = 31; i >= 0; --i)
 	{
 		if (n >= getsquar(2, i))
