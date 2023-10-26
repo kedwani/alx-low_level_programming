@@ -1,5 +1,5 @@
 #include "main.h"
-unsigned int getsquar(int a, int b);
+unsigned long int getsquar(int a, int b);
 
 /**
  *print_binary - is a function to convert a unit to bin.
