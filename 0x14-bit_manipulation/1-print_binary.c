@@ -11,7 +11,11 @@ void print_binary(unsigned long int n)
 	int i;
 	int flag = 0;
 
-
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 	for (i = 31; i >= 0; --i)
 	{
 		if (n >= getsquar(2, i))
@@ -27,9 +31,8 @@ void print_binary(unsigned long int n)
 			continue;
 		}
 		if (n == 0)
-			exit (0);
+			return;
 	}
-
 }
 
 /**
