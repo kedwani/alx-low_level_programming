@@ -42,7 +42,7 @@ void print_binary(unsigned long int n)
  *Return: the result.
  */
 
-unsigned int getsquar(int a, int b)
+unsigned long int getsquar(int a, unsigned int b)
 {
 	if (b == 0)
 		return (1);
