@@ -29,7 +29,6 @@ void print_binary(unsigned long int n)
 		if (n == 0)
 			break;
 	}
-	exit (0);
 }
 
 /**
