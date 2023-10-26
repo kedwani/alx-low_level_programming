@@ -1,0 +1,11 @@
+echo"#include "main.h""> 0-binary_to_uint.c
+echo"#include "main.h""> 100-get_endianness.c
+echo"#include "main.h""> 101-password
+echo"#include "main.h""> 1-print_binary.c
+echo"#include "main.h""> 2-get_bit.c
+echo"#include "main.h""> 3-set_bit.c
+echo"#include "main.h""> 4-clear_bit.c
+echo"#include "main.h""> 5-flip_bits.c
+echo"#include "main.h""> main.h
+echo"#include "main.h""> _putchar.c
+echo"#include "main.h""> README.md
