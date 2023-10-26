@@ -32,7 +32,6 @@ void print_binary(unsigned long int n)
 			break;
 	}
 	_putchar(10);
-	exit(0);
 }
 
 /**
