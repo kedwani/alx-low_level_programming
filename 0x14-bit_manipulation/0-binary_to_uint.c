@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		len++;
 	for (i = 0; b[i] != '\0'; ++i)
 	{
-		if (b[i] != '0' || b[i] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 		if (b[i] == '1')
 			sum += getsquar(2, len - 1);
