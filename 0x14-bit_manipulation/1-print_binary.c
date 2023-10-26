@@ -11,8 +11,6 @@ void print_binary(unsigned long int n)
 	int i;
 	int flag = 0;
 
-	if (!n)
-		exit(1);
 
 	for (i = 31; i >= 0; --i)
 	{
@@ -31,7 +29,7 @@ void print_binary(unsigned long int n)
 		if (n == 0)
 			break;
 	}
-	_putchar(10);
+	exit (0);
 }
 
 /**
