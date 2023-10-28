@@ -10,7 +10,8 @@ int main(void)
 {
 	unsigned int n;
 
-	n = binary_to_uint("01");
+	/* UINT_MAX */
+	n = binary_to_uint("11111111111111111111111111111111");
 	printf("%u\n", n);
 	return (0);
 }
