@@ -5,6 +5,7 @@
  *Return: the uint.
  */
 
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
@@ -18,8 +19,10 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		if (b[i] == '1')
-			sum += 2 << i;
+		if (b[i] == '1' && i == 0)
+			sum += 1;
+		else if (b[i] == '1')
+			sum += 2 << i ;
 		--len;
 	}
 	return (sum);
