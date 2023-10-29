@@ -8,7 +8,7 @@ unsigned long int getsquar(int a, unsigned int b);
 
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i = sizeof(n) * 8;
 	int flag = 0;
 
 	if (n == 0)
@@ -16,7 +16,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (i = 63; i >= 0; --i)
+	for (i - 1; i >= 0; --i)
 	{
 		if (n >= getsquar(2, i))
 		{
