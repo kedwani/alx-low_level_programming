@@ -10,6 +10,8 @@ int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int b, a;
 
+	if (index >= 64)
+		return (-1);
 	while (index < 64)
 	{
 		a = *n >> index;
@@ -25,5 +27,5 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		else
 			break;
 	}
-	return (-1);
+	return (1);
 }
