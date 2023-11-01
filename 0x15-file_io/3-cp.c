@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
