@@ -1,5 +1,5 @@
 #include "main.h"
-void err(int from, int to, int r, int w, int cfrom, int cto);
+void err(int from, int to, int r, int w, int cfrom, int cto, char **argv);
 
 /**
  * main - Copies the contents of a file to another file.
@@ -24,21 +24,21 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	from = open(argv[1], O_RDONLY);
-	err(from, 0, 0, 0, 0, 0);
+	err(from, 0, 0, 0, 0, 0, argv);
 
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	err(0, to, 0, 0, 0, 0);
+	err(0, to, 0, 0, 0, 0, argv);
 
 	while (r != 0 && r != -1)
 	{
 		r = read(from, buf, 1024);
 		w = write(to, buf, r);
 	}
-	err(0, 0, r, w, 0, 0);
+	err(0, 0, r, w, 0, 0, argv);
 
 	cfrom = close(from);
 	cto = close(to);
-	err(0, 0, 0, 0, cfrom, cto);
+	err(0, 0, 0, 0, cfrom, cto, argv);
 
 	return (0);
 }
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
  *@cfrom : is close frome return.
  *@cto : is cose to return.
  **/
-void err(int from, int to, int r, int w, int cfrom, int cto)
+void err(int from, int to, int r, int w, int cfrom, int cto, char **argv)
 {
 	if (from == -1)
 	{
