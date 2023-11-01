@@ -1,0 +1,7 @@
+#include "main.h"
+int main()
+{
+	read_textfile("textfile_0", 100);
+
+	return (0);
+}
