@@ -25,7 +25,7 @@ int main(int argc, char ** argv)
 	}
 
 	from = open(argv[1],O_RDONLY);
-	to = open(argv[2], O_RDWR | CREAT | O_TRUNC, 0662);
+	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0662);
 
 	while (r != 0)
 	{
