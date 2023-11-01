@@ -24,10 +24,10 @@ int main(int argc, char ** argv)
 		exit(97);
 	}
 
-	from = open(argv[1],O_RDONLY);
+	from = open(argv[1], O_RDONLY);
 	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0662);
 
-	while (r != 0)
+	while (r != 0 && r != -1)
 	{
 		r = read(from,buf,1024);
 		w = write(to,buf,r);
