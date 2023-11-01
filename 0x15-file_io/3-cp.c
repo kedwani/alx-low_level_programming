@@ -50,6 +50,7 @@ int main(int argc, char **argv)
  *@w : is write return.
  *@cfrom : is close frome return.
  *@cto : is cose to return.
+ *@argv : is the argumnets passed to main.
  **/
 void err(int from, int to, int r, int w, int cfrom, int cto, char **argv)
 {
