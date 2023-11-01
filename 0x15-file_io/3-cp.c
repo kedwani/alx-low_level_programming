@@ -13,7 +13,7 @@
  *              If file_to or file_from cannot be closed - exit code 100.
  */
 
-int main(int argc, char ** argv)
+int main(int argc, char **argv)
 {
 	int from, to, r, w, cfrom, cto;
 	char buf[1024];
@@ -37,10 +37,10 @@ int main(int argc, char ** argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while (r != 0 )
+	while (r != 0)
 	{
-		r = read(from,buf,1024);
-		w = write(to,buf,r);
+		r = read(from, buf, 1024);
+		w = write(to, buf, r);
 	}
 
 	if (r == -1)
@@ -53,7 +53,7 @@ int main(int argc, char ** argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	cfrom= close(from);
+	cfrom = close(from);
 	cto = close(to);
 	if (cfrom == -1 || cto == -1)
 	{
