@@ -27,7 +27,7 @@ int main(int argc, char ** argv)
 	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file  %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
@@ -45,7 +45,7 @@ int main(int argc, char ** argv)
 
 	if (from == -1 || r == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file  %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (to == -1 || w == -1)
