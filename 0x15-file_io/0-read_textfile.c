@@ -21,14 +21,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	o = open(filename, O_RDONLY);
 	if (o == -1)
+	{
 		return (0);
-
+		free(buf);
+	}
 	r = read(o, buf, letters);
 	if (r == -1)
+	{
 		return (0);
+		free(buf);
+	}
 	w = write(STDOUT_FILENO, buf, letters);
-	if (w != letters)
+	if (w == -1 )
+	{
 		return (0);
-
+		free(buf);
+	}
+	free(buf);
 	return (w);
 }
