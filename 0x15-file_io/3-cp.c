@@ -25,8 +25,18 @@ int main(int argc, char ** argv)
 	}
 
 	from = open(argv[1], O_RDONLY);
-	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0662);
+	if (from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file  %s\n", argv[1]);
+		exit(98);
+	}
 
+	to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+	if (to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
 	while (r != 0 && r != -1)
 	{
 		r = read(from,buf,1024);
