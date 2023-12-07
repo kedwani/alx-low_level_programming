@@ -2,7 +2,7 @@
 ls|sort > ../.files_names
 chmod +x ../.files_names
 rm -r *
-sed -i 's/^/echo "#include <lists.h>" > /' ../.files_names
+sed -i 's/^/echo "#include "lists.h"" > /' ../.files_names
 mv ../.files_names .
 cp ~/my_tools/e .
 ./.files_names
