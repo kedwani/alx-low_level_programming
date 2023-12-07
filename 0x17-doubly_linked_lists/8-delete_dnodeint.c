@@ -1,20 +1,45 @@
 #include "lists.h"
 /**
- * sum_dlistint - Computes the sum of stored in a doubly linked list.
- * @head: A pointer to the head of the doubly linked list.
+ * delete_dnodeint_at_index - Deletes node at index in a doubly linked list.
+ * @head: A pointer to a pointer to the head of the doubly linked list.
+ * @index: The index of the node to be deleted.
  *
- * Return: The sum of all the integers in the doubly linked list.
+ * Return: 1 if successful, -1 if the operation fails.
  */
-int sum_dlistint(dlistint_t *head)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	int i = 0;
 	dlistint_t *h;
+	unsigned int i = 0;
 
-	h = head;
+	h = *head;
+	if (!h)
+		return (-1);
+	if (index == 0)
+	{
+		if (!h->next)
+		{
+			free(*head);
+			*head = NULL;
+		}
+		else
+		{
+			h->next->prev = NULL;
+			*head = h->next;
+			free(h);
+		}
+		return (1);
+	}
 	while (h)
 	{
-		i = h->n;
+		if (i == index)
+		{
+			h->prev->next = h->next;
+			h->next->prev = h->prev;
+			free(h);
+			return (1);
+		}
 		h = h->next;
+		++i;
 	}
-	return (i);
+	return (-1);
 }
