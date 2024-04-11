@@ -1,0 +1,10 @@
+echo "#include <lists.h>" > 0-hash_table_create.c
+echo "#include <lists.h>" > 100-sorted_hash_table.c
+echo "#include <lists.h>" > 1-djb2.c
+echo "#include <lists.h>" > 2-key_index.c
+echo "#include <lists.h>" > 3-hash_table_set.c
+echo "#include <lists.h>" > 4-hash_table_get.c
+echo "#include <lists.h>" > 5-hash_table_print.c
+echo "#include <lists.h>" > 6-hash_table_delete.c
+echo "#include <lists.h>" > hash_tables.h
+echo "#include <lists.h>" > tests
