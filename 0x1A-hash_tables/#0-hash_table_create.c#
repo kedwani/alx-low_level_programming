@@ -1,4 +1,4 @@
-       #include "hash_tables.h"
+#include "hash_tables.h"
 
 /**
  * hash_table_create - Creates a hash table.
@@ -14,9 +14,24 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *created;
-	unsigned long int i;
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "hash_tables.h"
 
-/* Check if size is valid */
+/**
+ * main - check the code for
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    hash_table_t *ht;
+
+    ht = hash_table_create(1024);
+    printf("%p\n", (void *)ht);
+    return (EXIT_SUCCESS);
+	/* Check if size is valid */
 	if (size == 0)
 		return (NULL);
 
