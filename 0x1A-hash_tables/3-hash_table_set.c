@@ -17,15 +17,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *tmp;
-/* check for null input */
+	/* check for null input */
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
-/*search for exist key*/
+	/*search for exist key*/
 	if (ht->array[index] != NULL)
 	{
 		if (strcmp(ht->array[index]->key, key) == 0)
 		{
+			free(ht->array[index]->value);
 			ht->array[index]->value = malloc(sizeof(char) * (strlen(value) + 1));
 			if (ht->array[index]->value == NULL)
 				return (0);
@@ -37,6 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(tmp->key, key) == 0)
 			{
+				free(tmp->value);
 				tmp->value = malloc(sizeof(char) * (strlen(value) + 1));
 				if (tmp->value == NULL)
 					return (0);
