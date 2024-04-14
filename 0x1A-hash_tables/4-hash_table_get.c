@@ -23,9 +23,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
+	if (ht->array[index] != NULL )
+		return (NULL);
     /* Check if the key at the index matches, return the value if it does */
-	if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
+	if (strcmp(ht->array[index]->key, key) == 0)
 		return (ht->array[index]->value);
 
 /* If not found at the first node, traverse the linked list at this index */
