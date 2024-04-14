@@ -7,7 +7,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 		exit (0);
-	for (i = 0; i < ht->size; ++i)
+	for (i = 0; i <= ht->size; ++i)
 	{
 		if (ht->array[i] == NULL)
 			continue;
