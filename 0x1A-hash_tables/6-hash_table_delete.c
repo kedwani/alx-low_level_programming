@@ -9,7 +9,10 @@ void hash_table_delete(hash_table_t *ht)
 	for (i = 0; i < ht->size; ++i)
 	{
 		if (ht->array[i] == NULL)
+		{
+			free(ht->array[i]);
 			continue;
+		}
 		else
 		{
 			tmp = ht->array[i]->next;
