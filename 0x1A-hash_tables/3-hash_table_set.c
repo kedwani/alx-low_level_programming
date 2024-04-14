@@ -34,7 +34,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(tmp->key, key) == 0)
 			{
-				tmp->value = strdup(value);
+				tmp->value = malloc(sizeof(char) * (strlen(value) + 1));
+				strcpy(tmp->value, value);
 				return (1);
 			}
 			tmp = tmp->next;
