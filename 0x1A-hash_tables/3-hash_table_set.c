@@ -16,7 +16,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *new_node, *tmp;
+	hash_node_t *tmp;
 /* check for null input */
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
@@ -44,8 +44,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	return (node_create(ht, key, value, index));
 }
 
-int node_create(hash_table_t *ht, const char *key, const char *value, /
-		unsigned long int index)
+int node_create(hash_table_t *ht, const char *key,
+		const char *value, unsigned long int index)
 {
 	hash_node_t *new_node;
 
