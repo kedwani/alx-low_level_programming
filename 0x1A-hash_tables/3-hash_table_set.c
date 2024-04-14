@@ -26,7 +26,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(ht->array[index]->key, key) == 0)
 		{
-			ht->array[index]->value = strdup(value);
+			ht->array[index]->value == malloc(sizeof(char) * (strlen(value) + 1));
+			if (ht->array[index]->value == NULL)
+				return (NULL);
+			strcpy(ht->array[index]->value, value);
 			return (1);
 		}
 		tmp = ht->array[index]->next;
@@ -35,6 +38,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (strcmp(tmp->key, key) == 0)
 			{
 				tmp->value = malloc(sizeof(char) * (strlen(value) + 1));
+				if (tmp->value == NULL)
+					return (NULL);
 				strcpy(tmp->value, value);
 				return (1);
 			}
