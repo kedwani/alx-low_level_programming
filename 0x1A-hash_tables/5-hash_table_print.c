@@ -7,11 +7,11 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 		exit (0);
+	printf("{");
 	for (i = 0; i <= ht->size; ++i)
 	{
 		if (ht->array[i] == NULL)
 			continue;
-		printf("{");
 		tmp = ht->array[i];
 		while (tmp)
 		{
@@ -22,6 +22,6 @@ void hash_table_print(const hash_table_t *ht)
 			flag = 1;
 			tmp = tmp->next;
 		}
-		printf("}\n");
 	}
+	printf("}\n");
 }
