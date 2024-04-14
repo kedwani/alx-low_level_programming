@@ -58,19 +58,24 @@ int node_create(hash_table_t *ht, const char *key,
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
-	new_node->key = strdup(key);
+	new_node->key = malloc(sizeof(char) * (ht->size) + 1);
 	if (new_node->key == NULL)
 	{
 		free(new_node);
 		return (0);
 	}
-	new_node->value = strdup(value);
+	strcpy(new_node->key, key);
+
+	new_node->value = malloc(sizeof(char) * (ht->size) + 1);
 	if (new_node->value == NULL)
 	{
 		free(new_node->key);
 		free(new_node);
 		return (0);
 	}
+	strcpy(new_node->value, value);
+
+
 	if (ht->array[index] == NULL)
 		new_node->next = NULL;
 	else
