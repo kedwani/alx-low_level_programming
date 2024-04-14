@@ -20,45 +20,49 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
     /* check for null input */
     if (ht == NULL || key == NULL || *key == '\0')
-        return (0);
+	    return (0);
     index = key_index((const unsigned char *)key, ht->size);
-/*    if (strcmp(ht->array[index]->key,key) == 0)
-	    ht->array[index]->value = strdup(value);
-    if (ht->array[index]->next)
+    if (ht->array[index] == NULL)
     {
-	    tmp = ht->array[index]->next;
-
-	    while (tmp)
+	    new_node = malloc(sizeof(hash_node_t));
+	    if (new_node == NULL)
+		    return (0);
+	    new_node->key = strdup(key);
+	    if (new_node->key == NULL)
 	    {
-		    if (strcmp(tmp->key,key) == 0)
+		    free(new_node);
+		    return (0);
+	    }
+	    new_node->value = strdup(value);
+	    if (new_node->value == NULL)
+	    {
+		    free(new_node->key);
+		    free(new_node);
+		    return (0);
+	    }
+	    if (ht->array[index] == NULL)
+		    new_node->next = NULL;
+	    else
+		    new_node->next = ht->array[index];
+	    ht->array[index] = new_node;
+    }
+    else
+    {
+	    if (strcmp(ht->array[index]->key,key) == 0)
+		    ht->array[index]->value = strdup(value);
+	    if (ht->array[index]->next)
+	    {
+		    tmp = ht->array[index]->next;
+		    while (tmp)
 		    {
-			    tmp->value = strdup(value);
-			    return (1);
+			    if (strcmp(tmp->key,key) == 0)
+			    {
+				    tmp->value = strdup(value);
+				    return (1);
+			    }
+			    tmp = tmp->next;
 		    }
-		    tmp = tmp->next;
 	    }
     }
-*/
-    new_node = malloc(sizeof(hash_node_t));
-    if (new_node == NULL)
-        return (0);
-    new_node->key = strdup(key);
-    if (new_node->key == NULL)
-    {
-        free(new_node);
-        return (0);
-    }
-    new_node->value = strdup(value);
-    if (new_node->value == NULL)
-    {
-        free(new_node->key);
-        free(new_node);
-        return (0);
-    }
-    if (ht->array[index] == NULL)
-        new_node->next = NULL;
-    else
-        new_node->next = ht->array[index];
-    ht->array[index] = new_node;
     return (1);
 }
